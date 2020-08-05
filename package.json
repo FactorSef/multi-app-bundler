@@ -1,0 +1,59 @@
+{
+  "name": "multi-app-bundler",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "dev:app1": "webpack --config testApp.config.js --mode development --watch",
+    "build:app1": "webpack --config testApp.config.js --mode production",
+    "dev:app2": "webpack --config testApp2.config.js --mode development --watch",
+    "build:app2": "webpack --config testApp2.config.js --mode production"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@svgr/webpack": "4.3.3",
+    "babel-loader": "8.1.0",
+    "babel-plugin-named-asset-import": "^0.3.6",
+    "babel-preset-react-app": "^9.1.2",
+    "css-loader": "3.4.2",
+    "file-loader": "4.3.0",
+    "gulp": "^4.0.2",
+    "html-webpack-plugin": "4.0.0-beta.11",
+    "mini-css-extract-plugin": "0.9.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "postcss-flexbugs-fixes": "4.1.0",
+    "postcss-loader": "3.0.0",
+    "postcss-normalize": "8.0.1",
+    "postcss-preset-env": "6.7.0",
+    "postcss-safe-parser": "4.0.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-dev-utils": "^10.2.1",
+    "resolve": "1.15.0",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "8.0.2",
+    "style-loader": "0.23.1",
+    "url-loader": "2.3.0",
+    "webpack": "4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "3.10.3",
+    "webpack-merge": "^4.2.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
